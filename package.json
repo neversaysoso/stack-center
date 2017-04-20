@@ -1,0 +1,33 @@
+{
+  "name": "gulp-test",
+  "version": "1.0.0",
+  "description": "gulp test",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "yaming1106@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-copy": "^0.0.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev-append": "^0.1.7",
+    "gulp-uglify": "^2.0.0",
+    "imagemin-pngcrush": "^5.0.0",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "dependencies": {}
+}

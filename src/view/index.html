@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/lib/vue.min.js"></script>
+
+	<!-- build:css -->
+	<link rel="stylesheet/less" href="../less/style.less"></link>
+	<script type="text/javascript" src="../js/lib/less.min.js"></script>
+	<!-- endbuild -->
+	<title>门户网站</title>
+</head>
+
+<body>
+	<div class="mh-body" id="mh-index">
+		<div class="mh-logo" @click="openPage(logo.href)">
+			<div class="logodiv">
+				<!--<img :src="logo.imgSrc" />-->
+				<div class="logo-tip-1"></div>
+				<div class="logo-tip-2"></div>
+			</div>
+		</div>
+		<div class="mh-gnbox">
+			<div class="mh-gnlist">
+				<div class="mh-items" v-bind:class="{ building: l.isBuilding }" v-for="l in newgnlist" @click="openPage(l.href)">
+					<div class="mh-itemsimg">
+						<img class="normalimg" :src="l.imgSrc" />
+						<img class="currentimg" :src="l.cimgSrc" />
+						<div class="mh-items-star" :class="l.type"></div>
+					</div>
+					<div class="text">{{l.text}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="canvas-box">
+			<canvas id="canvas"></canvas>
+		</div>
+	</div>
+	<!-- build:js -->
+	<script type="text/javascript" src="../js/main.js"></script>
+	<!-- endbuild -->
+</body>
+
+</html>
